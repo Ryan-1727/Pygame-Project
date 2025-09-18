@@ -36,13 +36,8 @@ def load_frames(sheet, frame_width, frame_height, start_x=0, start_y=0, num_fram
 
 
 def load_map(filename):
-    grid = []
-    with open(filename, "r") as f:
-        for line in f:
-            line = line.strip()
-            if line:  # skip empty lines
-                row = [int(char) for char in line]
-                grid.append(row)
-    return grid
-
+    """Reads a map file and returns a 2D list of characters."""
+    with open(filename, 'r') as file:
+        map_grid = [line.strip().split(',') for line in file.readlines()]
+    return map_grid
 

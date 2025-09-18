@@ -6,9 +6,6 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, pos, bounds):
         super().__init__()
 
-        #git config --global user.name "Ryan-1727"
-
-        # git config --global user.email "ryanpallison2022@gmail.com"
         # --- Load animations ---
         player_image = pygame.image.load('Old hero.png').convert()
         player_image.set_colorkey((157, 142, 135))
