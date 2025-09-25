@@ -16,9 +16,9 @@ dt = 0
 
 wolf1 = Wolf(pos=(640, 360), speed=100, x_range=(200, 800))
 wolf2 = Wolf(pos=(500, 400), speed=150, x_range=(100, 600))
-bluejay = Bird(pos=(350, 100), speed=150, x_range=(300, 550))
-whitebird = Bird(pos=(800, 150), speed=150, x_range=(700, 900), bird_type=1)
-redbird = Bird(pos=(600, 175), speed=150, x_range=(500, 900), bird_type=2)
+bluejay = Bird(pos=(350, 100), speed=100, x_range=(300, 550))
+whitebird = Bird(pos=(800, 150), speed=110, x_range=(700, 900), bird_type=1)
+redbird = Bird(pos=(600, 175), speed=200, x_range=(500, 900), bird_type=2)
 campfire = StaticEntity(pos=(500, 500), entity_type=0)
 marketplace = StaticEntity(pos=(200, 400), entity_type=1)
 crops = StaticEntity(pos=(400, 380), entity_type=2)

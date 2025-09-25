@@ -11,4 +11,5 @@ class Bird(AnimatedSprite):
 
         fly_left = load_frames(pygame.image.load(image).convert_alpha(), 32, 32, 0, 0, 3, 1)
         fly_right = [pygame.transform.flip(f, True, False) for f in fly_left]
-        super().__init__(pos, speed, x_range, frames_right=fly_right, frames_left=fly_left)
+        super().__init__(pos, speed, x_range, frames_right=fly_right, y_bounds=(100, 300), movement_type="LL",
+                         frames_left=fly_left, frame_speed=0.10)

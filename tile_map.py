@@ -2,6 +2,7 @@ import pygame
 from utils import load_map, load_frames
 import os
 
+
 class TileMap:
     CONFIG = {
         # brick
@@ -55,3 +56,4 @@ class TileMap:
         map_width = len(self.map_grid[0]) * self.tile_size
         map_height = len(self.map_grid) * self.tile_size
         return map_width, map_height
+
